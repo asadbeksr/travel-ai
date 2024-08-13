@@ -78,7 +78,7 @@ export function ChatUI() {
     <div className="flex flex-col items-center justify-center min-h-screen px-4 ">
       <Card
         ref={chatRef}
-        className="border-green-400 w-full max-w-xl max-h-[85vh] min-h-[85vh]  sm:max-h-[75vh] sm:min-h-[75vh] overflow-scroll no-scrollbar px-4 bg-white rounded-lg">
+        className="border-green-400 w-full max-w-xl max-h-[75vh] min-h-[75vh]  sm:max-h-[75vh] sm:min-h-[75vh] overflow-scroll no-scrollbar px-4 bg-white rounded-lg">
         <CardHeader className="p-0 sticky top-0 bg-white bg-opacity-50 backdrop-blur-sm z-[99] py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
