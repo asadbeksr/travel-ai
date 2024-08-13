@@ -5,7 +5,7 @@ import { HuggingFaceStream, StreamingTextResponse } from 'ai';
 import { experimental_buildOpenAssistantPrompt } from 'ai/prompts';
 
 // Create a new HuggingFace Inference instance
-const Hf = new HfInference('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');
+const Hf = new HfInference(process.env.HUGGINGFACE_API_KEY);
 
 export async function POST(req: Request) {
   // Extract the `messages` from the body of the request

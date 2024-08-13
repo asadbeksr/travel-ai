@@ -2,7 +2,7 @@ import { HfInference } from '@huggingface/inference';
 import { HuggingFaceStream, StreamingTextResponse } from 'ai';
 
 // Create a new Hugging Face Inference instance
-const Hf = new HfInference("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");
+const Hf = new HfInference(process.env.HUGGINGFACE_API_KEY);
 
 export async function POST(req: Request) {
   // Extract the `prompt` from the body of the request
